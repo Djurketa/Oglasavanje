@@ -6,7 +6,6 @@ class Article extends CI_Controller
 	
 	public function view ($id=NULL){
 
-		
 		$data['article'] = $this->article_model->get_articles($id);
 		$id = $data['article']['id'];
 		$data['comments'] = $this->comment_model->get_comments($id);
